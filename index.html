@@ -6,7 +6,7 @@
     <title>Bitácora Angie Medina</title>
     <link rel="icon" href="Recursos/img/LogCapu">
     <style>
-       
+        /* 1. CONFIGURACIÓN GLOBAL */
         html, body {
             height: 100%;
             margin: 0;
@@ -21,7 +21,7 @@
             text-align: center;
         }
 
-       Encabezado...
+        /* 2. ENCABEZADO */
         header {
             padding: 30px;
             background-color: #6e5fdc;
@@ -37,7 +37,7 @@
                 0 0 20px #fdfd96;      
         }
 
-        Semanas...
+        /* 3. CLASE SEMANA (TARJETAS) */
         .semana {
             background-color: rgba(255, 255, 255, 0.07);
             border: 1px solid #e3aeff;
@@ -62,8 +62,21 @@
             border-bottom: 1px solid rgba(227, 174, 255, 0.3);
             padding-bottom: 10px;
         }
+        /* ESTILO PARA EL VIDEO REPRODUCTOR */
+        .video-container {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
 
-       Cont principal...
+        video {
+            width: 100%;
+            display: block;
+        }
+
+        /* 4. CONTENIDO PRINCIPAL */
         main {
             flex: 1;
             padding: 40px 20px;
@@ -71,7 +84,7 @@
             margin: 0 auto;
         }
 
-       Pie de página...
+        /* 5. PIE DE PÁGINA */
         footer {
             display: flex;
             justify-content: space-between;
@@ -107,7 +120,16 @@
             <h2>Semana 2: Proyectos y Laboratorios</h2>
             <p>Durante esta semana trabajamos en la estructura avanzada de HTML. Fue una jornada intensa de práctica en clase, resolviendo dudas y aplicando estilos CSS para que nuestras páginas del colegio se vean mucho más profesionales y creativas.</p>
         </div>
-
+<div class="semana">
+            <h2>Semana 3: Simulación en Tinkercad</h2>
+            <p>En esta sesión construimos un circuito interactivo utilizando una placa Arduino Uno, una placa de pruebas (breadboard), resistencias y luces LED. Añadimos el código de programación para controlar el encendido secuencial de los componentes.</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="Video de circuito.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de este video.
+                </video>
+            </div>
+        </div>
         <div class="semana" style="height: 80vh; display: flex; flex-direction: column;">
             <h2>Documento: Introducción a Arduino</h2>
             <embed 
@@ -117,8 +139,7 @@
                 height="100%" 
                 style="border-radius: 10px; flex-grow: 1;"
             />
-            <p style="font-size: 0.85em; text-align: center; margin-top: 15px;">
-                ¿No puedes visualizar el PDF? 
+            <p style="font-size: 0.85em; text-align: center; margin-top: 15px;"> 
                 <a href="c:\Users\Alumno Capouilliez\Downloads\Introducción Arduino AM.pdf" target="_blank" style="color: #fdfd96; font-weight: bold;">
                    Haz clic aquí para abrirlo en pantalla completa.
                 </a>
@@ -133,3 +154,4 @@
 
 </body>
 </html>
+
